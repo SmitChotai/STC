@@ -18,7 +18,7 @@
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
             <div class="container">
-                <a class="logo fw-bold nav-item nav-link" href="#">Smit Chotai Portfolio</a>
+                <a class="logo fw-bold nav-item nav-link" href="#home"> Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,16 +39,17 @@
                         </li>
                     </ul>
                 </div>
-                <marquee class="h4" style="color: #228B22;">Welcome To Smit Chotai's Portfolio Website</marquee>
+                <marquee class="h4 color-success">Welcome To Smit Chotai's Portfolio Website</marquee>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero d-flex align-items-center">
+        <section id="home" class="hero d-flex align-items-center ">
             <div class="container text-center">
                 <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">Welcome to My Portfolio</h1>
-                <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-1s">Crafting Digital Experiences
+                <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-1.5s">Crafting Digital
+                    Experiences
                     with Passion and Precision</p>
 
             </div>
@@ -59,7 +60,7 @@
                 <h2 class="text-center">About Me</h2>
                 <div class="row mt-4">
                     <div class="col-lg-4">
-                        <img src="/myself.png" class="w-100 rounded animationall" alt="image" id="imgchange" />
+                        <img src="myself.png" class="w-100 rounded animationall" alt="image" id="imgchange" />
                     </div>
 
                     <div class="col-lg-8 " style="text-align: justify">
@@ -116,7 +117,7 @@
                             <p>With a keen eye for detail and a commitment to best practices, I ensure that my work is
                                 both efficient and effective. When I’m not coding, you can find me exploring the latest
                                 design trends or sharing knowledge with fellow developers.</p>
-                                <a href="#" class="btn btn-primary btn-lg col-md-6">Download Resume</a>
+                            <a href="#" class="btn btn-primary btn-lg col-md-6">Download Resume</a>
                         </div>
                     </div>
                 </div>
@@ -138,18 +139,19 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100 shadow-sm">
-                            
+
                             <div class="card-body">
-                                <h5 class="card-title">Portfolio Template</h5>
-                                <p class="card-text">Display weather information for a user-specified location.
-                                    Input field for location, display current weather, and 5-day forecast using a weather API.</p>
+                                <h5 class="card-title">Fitness Tracker</h5>
+                                <p class="card-text">Description: Track workouts and progress.
+                                    Features: Input fields for exercise type, duration, and notes. Display the workout
+                                    history in a list.</p>
                                 <a href="#" class="btn btn-outline-primary">View Project</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100 shadow-sm">
-                            
+
                             <div class="card-body">
                                 <h5 class="card-title">Task Management App</h5>
                                 <p class="card-text">A sleek and intuitive task management application built with React
@@ -163,29 +165,69 @@
         </section>
 
         <section id="contact" class="py-5">
-            <div class="container">
-                <h2 class="display-4 fw-bold mb-5 text-center">Get in Touch</h2>
+            <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <form id="contact-form" class="needs-validation" novalidate>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                               
+                    <div class="col-md-6 bg-light p-4 rounded">
+                        <h3 class="text-center bg-secondary text-light p-2 rounded">Contact Me Form</h3>
+                        <form target="_blank" action="/register" autocomplete="on" class="input-inline">
+                            <div class="input-group mb-3">
+                                <label for="firstName" class="col-sm-2 col-form-label">First
+                                    Name:</label>
+                                <input type="text" class="form-control" id="firstName"
+                                    placeholder="Enter your first name" required>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email"
+                            <div class="input-group mb-3">
+                                <label for="lastName" class="col-sm-2 col-form-label">Last
+                                    Name:</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name"
                                     required>
-                                
                             </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Feedback"
+                            <div class="input-group mb-3">
+                                <label for="email" class="col-sm-2 col-formlabel">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label for="phoneNumber" class="col-sm-2 col-formlabel">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phoneNumber"
+                                    placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="input-group mb-3 ">
+                                <label for="dateOfBirth" class="col-sm-2 col-formlabel">Date of Birth:</label>
+                                <input type="date" class="form-control" id="dateOfBirth" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <label for="address" class="col-sm-2 col-formlabel">Address:</label>
+                                <textarea class="form-control" id="address" placeholder="Enter your address"
                                     required></textarea>
-                                
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                            <div class="input-group mb-3">
+                                <label for="course" class="col-sm-2 col-formlabel">Course:</label>
+                                <select class="form-control" id="course" required>
+                                    <option value="">Select your course</option>
+                                    <option value="M. Tech">M. Tech</option>
+                                    <option value="B. Tech">B. Tech</option>
+                                    <option value="Diploma">Diploma</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label for="password" class="col-sm-2 col-formlabel">Password:</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter your password" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label for="confirmPassword" class="col-sm-2 col-formlabel">Confirm Password:</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Confirm your password" required>
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" class="input-check-input" id="termsAndConditions" required>
+                                <label class="input-check-label" for="termsAndConditions">I
+                                    agree to the terms and conditions</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
                         </form>
                     </div>
                 </div>
